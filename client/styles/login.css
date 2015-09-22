@@ -1,0 +1,37 @@
+.login-card {
+  height: 250px;
+  border-radius: 3px !important;
+  border: none;
+  padding: 20px;
+  background-color: rgba(0,0,0, 0.33);
+}
+.spn {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 1.7em;
+  color: #ccc;
+}
+.login-btn {
+  width: 150px;
+  color: #ccc;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 2px 2px rgba(0,0,0,0.33); 
+}
+
+.or {
+  font-family: 'Roboto',sans-serif;
+  font-weight: 100;
+  font-size: 1em;
+  color: #ccc;
+}
+.line {
+  width: 30px;
+
+}
+#google {
+  background-color: #d34836;
+}
+#facebook {
+  background-color: #3B5998;
+}

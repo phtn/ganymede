@@ -1,0 +1,22 @@
+
+.navbar {
+  background-color: transparent;
+  border: none;
+  //border-bottom: 1px solid #fff;
+}
+.navbar-header {
+  width: 100%;
+}
+.brand {
+  color: #555;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 2em;
+  line-height: 2em;
+  margin-left: 15px;
+	letter-spacing: 2px;
+}
+.sign-in {
+  margin-top: 10px;
+  color: #555;
+}

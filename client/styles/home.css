@@ -16,14 +16,48 @@ body {
 	text-align: center;
 }
 .home-card {
-	background-color: #ffe;
+	//background-color: rgba(49,84,129, 0.33);
+	//background-color: rgba(0,0,0, 0.33);
+	background-color: transparent;
 	border-radius: 2px;
 	border: none;
-	height: 250px;
+	height: 400px;
 	margin: 0 auto;
 
 }
 .shadow-card {
 	margin: 0 auto;
-	max-width: 60%;
+	max-width: 70%;
+	border-radius: 3px;
+}
+.btn-big {
+
+	height: 60px;
+	width: 100%;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 1.5em;
+	color: #ccc;
+	text-decoration: underline !important;
+	//background-color: rgba(49,84,129, 0.33);
+	background-color: #315481;
+	width: 70%;
+	margin-top: 40px;
+	box-shadow: 2px 2px rgba(0,0,0,0.33)
+
+}
+.centered {
+	//border: 1px dashed red;
+	font-family: 'Roboto', sans-serif;
+
+}
+.user-icon {
+	font-size: 20px;
+	margin-right: 15px;
+	margin-top: -4px;
+	color: #918e82;
+	border-bottom: 2px solid #00a78e;
+}
+.big-title {
+	//border-bottom: 1px solid #ffe;
 }

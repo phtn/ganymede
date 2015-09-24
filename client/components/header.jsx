@@ -24,14 +24,14 @@ Header = React.createClass({
     if (currentUser) {
       loginButton = (<paper-icon-button className="sign-in pull-right" icon="settings" onClick={this.goProfile}></paper-icon-button>)
     } else {
-      loginButton = (<paper-icon-button className="sign-in pull-right" icon="account-circle" onClick={this.logIn}></paper-icon-button>)
+      loginButton = (<paper-icon-button className="sign-in pull-right" icon="account-box" onClick={this.logIn}></paper-icon-button>)
     }
     return(
       <paper-shadow z="1">
       <nav className="navbar navbar-default">
         <div className="container-fluid">
           <div className="navbar-header">
-              <span className="brand" onClick={this.goHome}>GANYMEDE</span>
+              <span className="brand" onClick={this.goHome}>CALLISTO</span>
               {loginButton}
           </div>
         </div>

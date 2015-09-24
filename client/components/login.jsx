@@ -7,6 +7,7 @@ Login = React.createClass({
 				FlowRouter.go('/login')
 			}
 		});
+    Session.set('service', 'google');
     FlowRouter.go('/')
   },
   loginFacebook() {
@@ -17,11 +18,12 @@ Login = React.createClass({
 				FlowRouter.go('/login')
 			}
 		});
+    Session.set('service', 'facebook');
     FlowRouter.go('/')
   },
   render() {
     return(
-      <div className="component-div">
+      <div className="component-div bloom-animate">
         <paper-shadow z="3" className="shadow-card">
           <div className="login-card">
             <span className="spn">LOGIN WITH</span><br /><br />

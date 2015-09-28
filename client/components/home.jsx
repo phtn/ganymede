@@ -1,30 +1,37 @@
 Home = React.createClass({
+  mixins: [ReactMeteorData],
+  getMeteorData() {
+    return {
+      currentUser: Meteor.user()
+    }
+  },
 
   sign() {
     FlowRouter.go('/login')
   },
 
   render() {
-    let signUp = (
-      <div className="centered">
-        <paper-button className="btn-big" onClick={this.sign}>
-          <span className="user-icon glyphicon glyphicon-user"></span>
-          <span className="big-title">sign up</span>
-        </paper-button>
-      </div>);
-      let index_a = (
+    let {currentUser} = this.data;
+    let landingPage;
+    if (currentUser) { 
+        landingPage = (<span>LOGGED IN DOGG!!</span>);
+      } else {
+        landingPage = (
         <div className="centered">
-            <span className="big-title">DJIA</span>
+          <paper-button className="btn-big" onClick={this.sign}>
+            <span className="user-icon glyphicon glyphicon-user"></span>
+            <span className="big-title">sign up</span>
+          </paper-button>
         </div>
-      );
-
+        );
+      }
+       
 
     return (
       <div className="component-div git-up-animate">
           <div className="home-card">
-              {index_a}
               <br />
-              {signUp}
+              {landingPage}
           </div>
       </div>
     )
